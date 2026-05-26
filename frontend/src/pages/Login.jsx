@@ -21,7 +21,7 @@ export default function Login() {
       saveToken(res.data.token, { name: res.data.name, email: res.data.email, plan: res.data.plan })
       navigate('/dashboard')
     } catch (err) {
-      setError(err.response?.data?.message || 'Invalid email or password')
+      setError(err.userMessage || err.response?.data?.message || 'Invalid email or password')
     } finally {
       setLoading(false)
     }

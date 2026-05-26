@@ -23,7 +23,7 @@ export default function Register() {
       saveToken(res.data.token, { name: res.data.name, email: res.data.email, plan: res.data.plan })
       navigate('/dashboard')
     } catch (err) {
-      setError(err.response?.data?.message || 'Registration failed. Please try again.')
+      setError(err.userMessage || err.response?.data?.message || 'Registration failed. Please try again.')
     } finally {
       setLoading(false)
     }
