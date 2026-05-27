@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { AuthProvider, useAuth } from './context/AuthContext'
+import KeepAlive from './components/KeepAlive'
 import Landing from './pages/Landing'
 import Login from './pages/Login'
 import Register from './pages/Register'
@@ -16,6 +17,8 @@ function PrivateRoute({ children }) {
 function App() {
   return (
     <AuthProvider>
+      {/* Pings backend every 10 min to prevent Render free tier from sleeping */}
+      <KeepAlive />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />} />
