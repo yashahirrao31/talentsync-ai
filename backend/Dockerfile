@@ -20,4 +20,14 @@ COPY --from=build /app/target/ats-resume-checker-1.0.0.jar app.jar
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "-Dspring.profiles.active=prod", "app.jar"]
+# JVM tuning for Render free tier (512MB RAM):
+# -Xmx256m      → max heap 256MB
+# -Xms64m       → start heap small
+# -XX:+UseSerialGC → lower GC overhead than G1GC
+# -XX:MaxMetaspaceSize=128m → cap metaspace
+ENTRYPOINT ["java", \
+  "-Xmx256m", "-Xms64m", \
+  "-XX:+UseSerialGC", \
+  "-XX:MaxMetaspaceSize=128m", \
+  "-Dspring.profiles.active=prod", \
+  "-jar", "app.jar"]
