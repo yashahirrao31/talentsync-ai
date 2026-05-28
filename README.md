@@ -44,19 +44,14 @@ App will be available at:
 
 ## 🔑 Required API Keys
 
-### 1. Google Gemini API Key
-1. Go to [Google AI Studio](https://aistudio.google.com/)
-2. Click **Get API Key** → Create new key
-3. Copy and paste into `.env` as `GEMINI_API_KEY`
-
-### 2. AWS Keys (for S3)
+### 1. AWS Keys (for S3)
 1. Log in to [AWS Console](https://console.aws.amazon.com/)
 2. Go to **IAM** → Create user with `AmazonS3FullAccess`
 3. Create access key → copy `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
 4. Create an S3 bucket → paste name as `AWS_S3_BUCKET`
 5. Set `AWS_REGION` (e.g. `us-east-1`)
 
-### 3. JWT Secret
+### 2. JWT Secret
 Generate a strong random string (64+ characters):
 ```bash
 # PowerShell
