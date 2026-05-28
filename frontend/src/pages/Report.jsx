@@ -291,8 +291,8 @@ export default function Report() {
           {recommendations.length > 0 && (
             <div className="card animate-fade-in" style={{ marginBottom: '20px', borderColor: 'rgba(139,92,246,0.3)', background: 'linear-gradient(135deg, rgba(139,92,246,0.05), transparent)' }}>
               <h3 style={{ marginBottom: '18px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <span>💡</span> AI Recommendations
-                <span style={{ marginLeft: 'auto', fontSize: '0.75rem', background: 'var(--gradient-primary)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontWeight: 600 }}>Powered by Gemini AI</span>
+                <span>💡</span> Recommendations
+                <span style={{ marginLeft: 'auto', fontSize: '0.75rem', background: 'var(--gradient-primary)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontWeight: 600 }}>TalentSync AI Engine</span>
               </h3>
               {recommendations.map((rec, i) => <TipCard key={i} icon="💡" text={rec} index={i} />)}
             </div>

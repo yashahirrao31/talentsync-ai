@@ -9,7 +9,7 @@ const Logo = () => (
 
 const features = [
   { icon: '🎯', title: 'Precision ATS Scoring', desc: '7-category analysis covering keywords, structure, action verbs, quantified achievements, and more.' },
-  { icon: '🤖', title: 'Gemini AI Reports', desc: 'Google Gemini AI generates personalised section feedback, rewrite suggestions, and career tips.' },
+  { icon: '🧠', title: 'Smart AI Reports', desc: 'Our custom ATS engine generates personalised section feedback, rewrite suggestions, and career tips — no external API.' },
   { icon: '🔑', title: 'Keyword Gap Analysis', desc: 'Instantly see which keywords from the job description are missing from your resume.' },
   { icon: '📝', title: 'Rewrite Suggestions', desc: 'Get before/after bullet point rewrites to make your experience stand out.' },
   { icon: '📄', title: 'All File Formats', desc: 'Upload PDF, DOCX, DOC, ODT, TXT, RTF — we parse them all using Apache Tika.' },
@@ -19,7 +19,7 @@ const features = [
 const steps = [
   { num: '01', title: 'Upload Your Resume', desc: 'Drag & drop any resume format. We support PDF, DOCX, and more.', color: '#4338CA' },
   { num: '02', title: 'Add Job Description', desc: 'Paste the job description for hyper-accurate keyword matching.', color: '#7C3AED' },
-  { num: '03', title: 'Get Your AI Report', desc: 'Receive your ATS score + full Gemini AI analysis in seconds.', color: '#0EA5E9' },
+  { num: '03', title: 'Get Your AI Report', desc: 'Receive your ATS score + full in-house AI analysis in seconds — instant, private, and free.', color: '#0EA5E9' },
 ]
 
 const stats = [
@@ -67,7 +67,7 @@ export default function Landing() {
           <div style={{ maxWidth: '760px', margin: '0 auto', textAlign: 'center' }}>
             {/* Label */}
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.25)', borderRadius: '999px', padding: '6px 18px', fontSize: '0.8rem', fontWeight: 600, color: '#E0E7FF', marginBottom: '24px', letterSpacing: '0.05em' }}>
-              ✨ Powered by Google Gemini AI
+              ✨ Powered by TalentSync AI Engine
             </div>
 
             <h1 style={{ color: '#FFFFFF', marginBottom: '20px', textShadow: '0 2px 20px rgba(0,0,0,0.15)' }}>

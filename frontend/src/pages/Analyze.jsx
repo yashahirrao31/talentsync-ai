@@ -196,7 +196,7 @@ export default function Analyze() {
               🤖
             </div>
             <h2 style={{ marginBottom: '8px' }}>Analyzing Your Resume</h2>
-            <p style={{ color: 'var(--color-text-muted)', marginBottom: '32px' }}>Gemini AI is generating your personalized ATS report...</p>
+            <p style={{ color: 'var(--color-text-muted)', marginBottom: '32px' }}>Our ATS engine is analyzing your resume...</p>
 
             <div style={{ maxWidth: '420px', margin: '0 auto' }}>
               <div className="progress-bar-track" style={{ height: '10px', marginBottom: '12px' }}>
