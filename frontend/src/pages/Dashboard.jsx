@@ -61,7 +61,7 @@ export default function Dashboard() {
         {/* Greeting */}
         <div style={{ marginBottom: '28px' }}>
           <h2 style={{ fontSize: '1.75rem' }}>👋 Welcome back, {user?.name?.split(' ')[0]}!</h2>
-          <p style={{ color: 'var(--color-text-muted)', marginTop: '4px' }}>Track your resume scans and see your ATS progress.</p>
+          <p style={{ color: 'var(--color-text-muted)', marginTop: '4px' }}>Calculate your skills with TalentSync AI</p>
         </div>
 
         {/* Stats Row */}
